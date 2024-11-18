@@ -49,3 +49,8 @@ Pastikan semua data yang diterima memiliki format yang benar. Jika data yang dit
 4. Error Handling
 Gunakan blok try-catch untuk menangani semua error yang mungkin terjadi saat membaca atau menulis file JSON.
 Kirim pesan error yang informatif kepada client jika terjadi kegagalan dalam operasi file.
+
+## Catatan
+* Gunakan fs.readFile dan fs.writeFile untuk mengakses dan menyimpan data di data.json.
+* Gunakan middleware app.use(express.json()) dan app.use(express.urlencoded({ extended: true })) x-www-form-urlencodeduntuk meng-handle request.
+[Dokumentasi untuk melihat middleware handle request.body](https://expressjs.com/en/4x/api.html#req.body)

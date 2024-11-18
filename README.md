@@ -22,7 +22,7 @@ Contoh isi file `data.json`:
 ]
 ```
 
-Instruksi
+## Instruksi
 1. Inisialisasi Server
 Buat server HTTP dengan menggunakan Express.js.
 Atur server untuk berjalan di port 3000.

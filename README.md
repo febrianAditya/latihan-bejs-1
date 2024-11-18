@@ -22,25 +22,25 @@ Contoh isi file `data.json`:
 ]
 
 
-## Instruksi
+Instruksi
 1. Inisialisasi Server
 Buat server HTTP dengan menggunakan Express.js.
 Atur server untuk berjalan di port 3000.
 2. Operasi CRUD
 Buat route berikut ini untuk menangani operasi CRUD pada file data.json:
-## Create Item (POST /items)
+* Create Item (POST /items)
 Endpoint ini akan menerima data item baru dalam format JSON dan menambahkannya ke dalam data.json. Data item yang diterima harus memiliki id, name, dan description. id harus unik. Jika ada data sebelumnya di data.json, buat ID baru sebagai angka terakhir + 1. Kembalikan respons berupa data item yang baru ditambahkan beserta status berhasil.
 
-## Read All Items (GET /items)
+* Read All Items (GET /items)
 Endpoint ini membaca semua item dari data.json dan mengirimkannya sebagai respons dalam format JSON. Jika tidak ada item, kirim respons berupa array kosong [].
 
-## Read Item By Id (GET /items/:id)
+* Read Item By Id (GET /items/:id)
 Endpoint ini membaca item berdasarkan id yang diberikan di parameter URL. Jika item ditemukan, kirim data item tersebut sebagai respons. Jika tidak ada item dengan id yang diminta, kirimkan status 404 beserta pesan "Item not found".
 
-## Update Item (PUT /items/:id)
+* Update Item (PUT /items/:id)
 Endpoint ini memperbarui data item yang sudah ada berdasarkan id. Menerima data name dan description untuk diperbarui. Jika item dengan id yang diminta ditemukan, perbarui data tersebut dan kirim respons berupa data item yang telah diubah. Jika tidak ditemukan, kirimkan status 404 beserta pesan "Item not found".
 
-## Delete Item (DELETE /items/:id)
+* Delete Item (DELETE /items/:id)
 Endpoint ini menghapus item berdasarkan id.Jika item ditemukan, hapus dari data.json dan kirim respons sukses. Jika tidak ditemukan, kirimkan status 404 beserta pesan "Item not found".
 
 3. Validasi Data
